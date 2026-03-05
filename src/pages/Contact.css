@@ -1,0 +1,111 @@
+.contact-container {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-details {
+  padding: 3rem;
+}
+
+.contact-details h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.contact-desc {
+  color: var(--accent-grey);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.contact-icon {
+  background-color: var(--primary-cream);
+  color: var(--text-dark);
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.contact-item p {
+  color: var(--accent-grey);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-subtext {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+.contact-item a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--text-dark);
+}
+
+.contact-time {
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-top: 0.25rem;
+}
+
+.contact-visuals {
+  padding: 3rem;
+}
+
+.contact-map h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.contact-greeting {
+  margin-top: 2rem;
+  background-color: var(--primary-cream);
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-greeting h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
