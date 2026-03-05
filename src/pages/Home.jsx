@@ -54,7 +54,7 @@ const Home = () => {
                     <div className="trust-strip animate-fade-in">
                         <span className="trust-label">Authorized Dealer of Trusted Brands</span>
                         <div className="trust-brands">
-                            <span>Bangur Cement</span> &bull; <span>Asian Paints</span> &bull; <span>Birla Opus Paint</span> &bull; <span>JK Cement</span> &bull; <span>Sparsh</span> &bull; <span>Kasta</span> &bull; <span>Victus Tanks</span>
+                            <span>Bangur Cement</span> &bull; <span>Asian Paints</span> &bull; <span>Birla Opus Paint</span> &bull; <span>Birla White</span> &bull; <span>Sparsh</span> &bull; <span>Raksha</span> &bull; <span>Kasta</span> &bull; <span>Victus Tanks</span> &bull; <span>Plasto</span>
                         </div>
                     </div>
                     <h1 className="animate-fade-in">Your Trusted Building Material Supplier</h1>
@@ -181,12 +181,20 @@ const Home = () => {
                             <h3>Victus</h3>
                         </div>
                         <div className="brand-card">
-                            <img src="/assets/JK Cement - Brand Logo.png" alt="JK Cement" className="brand-logo" />
-                            <h3>JK Cement</h3>
+                            <img src="/assets/plasto.png" alt="Plasto" className="brand-logo" />
+                            <h3>Plasto</h3>
+                        </div>
+                        <div className="brand-card">
+                            <img src="/assets/birla.png" alt="Birla White Cement" className="brand-logo" />
+                            <h3>Birla White Cement</h3>
                         </div>
                         <div className="brand-card">
                             <img src="/assets/opus.png" alt="Birla Opus Paint" className="brand-logo" />
                             <h3>Birla Opus Paint</h3>
+                        </div>
+                        <div className="brand-card">
+                            <img src="/assets/raksha.png" alt="Raksha" className="brand-logo" />
+                            <h3>Raksha</h3>
                         </div>
                         <div className="brand-card">
                             <img src="/assets/pearls.png" alt="Precision" className="brand-logo" />
