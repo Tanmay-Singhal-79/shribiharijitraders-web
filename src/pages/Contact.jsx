@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, User } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -31,6 +31,16 @@ const Contact = () => {
                                 <p>Shri Bihari Ji Traders
                                     <br />Near New Anaj Mandi<br />
                                     Rupbas, Bharatpur, Rajasthan - 321404</p>
+                            </div>
+                        </div>
+
+                        <div className="contact-item">
+                            <div className="contact-icon">
+                                <User size={24} />
+                            </div>
+                            <div>
+                                <h3>Owner / Proprietor</h3>
+                                <p>Mr. Sandeep Kumar Singhal</p>
                             </div>
                         </div>
 
