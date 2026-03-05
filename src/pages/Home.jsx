@@ -225,20 +225,34 @@ const Home = () => {
 
             {/* Trust & Certification Section */}
             < section className="section trust-section" >
-                <div className="container trust-container">
-                    <div className="trust-content">
-                        <h2 className="section-title text-left">Authorized Dealer & Trusted Supplier</h2>
-                        <p>
-                            We are recognized and authorized dealers for India's leading building material manufacturing companies. Our direct partnerships ensure you get 100% genuine products at competitive prices.
+                <div className="container">
+                    <div className="text-center mb-12">
+                        <h2 className="section-title">Authorized Dealership Certifications</h2>
+                        <p className="section-subtitle">
+                            We are proud authorized dealers of leading building material brands, ensuring genuine products and trusted quality.
                         </p>
-                        <ul className="trust-list">
-                            <li><ShieldCheck size={20} className="text-accent" /> Verified Supplier</li>
-                            <li><ThumbsUp size={20} className="text-accent" /> Quality Assured Quality</li>
-                            <li><Users size={20} className="text-accent" /> Expert Consultations</li>
-                        </ul>
                     </div>
-                    <div className="trust-image-wrapper">
-                        <img src="/assets/cert.png" alt="Authorized Dealership Certificate" className="trust-image" />
+
+                    <div className="trust-grid">
+                        <div className="certificate-card">
+                            <div className="cert-image-wrapper">
+                                <img src="/assets/bangur.png" alt="Bangur Cement Authorized Dealer" className="cert-image" />
+                            </div>
+                            <div className="cert-content">
+                                <h3>Bangur Cement Authorized Dealer</h3>
+                                <p>Official dealership certification for supplying genuine Bangur Cement products.</p>
+                            </div>
+                        </div>
+
+                        <div className="certificate-card">
+                            <div className="cert-image-wrapper">
+                                <img src="/assets/asian.png" alt="Asian Paints Authorized Dealer" className="cert-image" />
+                            </div>
+                            <div className="cert-content">
+                                <h3>Asian Paints Authorized Dealer</h3>
+                                <p>Authorized dealer of Asian Paints providing original and high-quality paint solutions.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section >

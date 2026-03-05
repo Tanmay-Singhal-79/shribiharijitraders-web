@@ -30,7 +30,13 @@
 }
 
 .contact-header {
-  background-image: url('/assets/gallery_3.png');
+  background-color: var(--text-dark);
+  min-height: auto;
+  padding-bottom: 4rem;
+}
+
+.contact-header .header-overlay {
+  display: none;
 }
 
 .header-overlay {
@@ -129,6 +135,21 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .section {

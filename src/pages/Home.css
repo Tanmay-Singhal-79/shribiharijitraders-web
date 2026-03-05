@@ -573,62 +573,86 @@
   transform: scale(1.1);
 }
 
-/* Trust Section */
+/* Trust & Certification Section */
 .trust-section {
   background-color: var(--primary-cream);
   padding: 6rem 0;
+  text-align: center;
 }
 
-.trust-container {
+.trust-section .section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  color: var(--accent-grey);
+}
+
+.trust-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
-  align-items: center;
+  gap: 3rem;
+  max-width: 1000px; /* Constrain width */
+  margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  .trust-container {
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 768px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.trust-content p {
-  font-size: 1.1rem;
-  color: var(--accent-grey);
-  margin-bottom: 2rem;
-  line-height: 1.8;
-}
-
-.trust-list {
-  list-style: none;
+.certificate-card {
+  background-color: var(--secondary-white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid var(--border-light);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
-.trust-list li {
+.certificate-card:hover {
+  transform: translateY(-8px); /* Lift effect */
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+.cert-image-wrapper {
+  padding: 2rem;
+  background-color: var(--secondary-white);
+  border-bottom: 1px solid var(--border-light);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-weight: 500;
-  font-size: 1.1rem;
+  justify-content: center;
+  height: 200px; /* Fixed height for consistency */
 }
 
-.text-accent {
+.cert-image {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.certificate-card:hover .cert-image {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.cert-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cert-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
   color: var(--text-dark);
 }
 
-.trust-image-wrapper {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-  border: 4px solid var(--secondary-white);
-}
-
-.trust-image {
-  width: 100%;
-  height: auto;
-  display: block;
+.cert-content p {
+  color: var(--accent-grey);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Features Section */
@@ -772,8 +796,144 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 0 4rem;
+    background-position: center;
+  }
+
+  .trust-strip {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .trust-brands {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .trust-brands span {
+    display: inline-block;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* About Section Override */
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image-wrapper {
+    order: -1; /* Image on top */
+    max-height: 300px;
+  }
+
+  .about-content h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .about-description {
+    text-align: center;
+  }
+
+  .about-highlight-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* Solutions Card Grid */
+  .grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modern-solution-card {
+    min-height: auto;
+  }
+
+  .modern-card-image-wrapper {
+    height: 180px;
+  }
+
+  /* Brands Grid */
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* CTA Section */
+  .cta-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .spiritual-greeting {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+   .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .brand-card {
+    padding: 1rem 0.5rem;
+    min-height: 100px;
+  }
+
+  .brand-logo {
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .brand-card h3 {
+    font-size: 0.85rem;
   }
 }

@@ -52,6 +52,51 @@
   border: none;
   cursor: pointer;
   color: var(--text-dark);
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 78px; /* Below navbar */
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-white);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-dark);
 }
 
 @media (max-width: 768px) {
