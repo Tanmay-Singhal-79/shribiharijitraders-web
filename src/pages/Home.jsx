@@ -219,7 +219,7 @@ const Home = () => {
                             <img src="/assets/sbjt-gallery3.jpg" alt="Paint Section" />
                         </div>
                         <div className="gallery-item">
-                            <img src="/assets/sbjt-hero6.webp" alt="Hardware Stock" />
+                            <img src="/assets/sbjt-gallery6.jpeg" alt="Hardware Stock" />
                         </div>
                         <div className="gallery-item">
                             <img src="/assets/sbjt-gallery4.jpg" alt="Construction Materials" />
